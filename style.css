@@ -101,14 +101,51 @@ td{
 	position: relative;
 	top: 45px;
 	font-size:  3em;
+	text-align: center;
 }
 
 .FabParagraph{
+	text-align: center;
 	font-size:  2em;
 }
 
 .ContactDiv{
-	margin: auto;
-    width: 50%;
-    padding: 10px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+@media screen and (max-width: 500px){
+
+	img{
+		height: 250;
+		width: 250;
+	}
+	
+	.FabPic{
+		height: 450;
+		width: 300;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 980px){
+
+	img{
+		height: 400;
+		width: 400;
+	}
+	.FabPic{
+		height: 450;
+		width: 300;
+	}
+}
+
+@media screen and (min-width: 981px){
+
+	img{
+		height: 400;
+		width: 400;
+	}
+	.FabPic{
+		height: 450;
+		width: 300;
+	}
 }

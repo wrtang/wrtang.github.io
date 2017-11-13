@@ -3,6 +3,16 @@
 <head>
   <link rel="stylesheet" type = "text/css" href = "style.css">
   <title>William's Projects</title>
+  <script>
+  <!-->
+  var slide1 = new Image()
+  slide1.src="mir.jpg"
+  var slide2 = new Image()
+  slide2.src="BuzzerAndLight.jpg"
+  var slide3 = new Image()
+  slide3.src="FabFlixMobileApp.jpg"
+  //-->
+  </script>
 </head>
 
 <body>
@@ -14,11 +24,29 @@
 		<li><a href= "ContactMe.html"> Contact</a></li>
 	</ul>
 	
-
+	<div>
 	<h1 id = "top">Projects</h1>
 		<a href="#Fabflix">Fabflix</a>
 		<a href="#Search Engine">Search Engine</a>
 		<a href="#Hardware Projects">Hardware Projects</a>
+	</div>
+
+	<img src= "mir.jpg" name = "slide" class = "FabPic">
+	<script>
+	
+	var i = 1
+	function slide(){
+		document.images.slide.src=eval("slide"+i+".src")
+		if(i<3)
+		i++
+		else
+		i = 1
+		setTimeout("slide()",2500)
+	}
+	slide()
+
+	</script>
+	
 		
 	<h2 id = "Fabflix">Fabflix</h2>
 	<p> This is one of my favorite projects. As a team, we developed an ecommerce movies website using amazon web browser to enhance the user's movie buying experience. As a team we developed a movie database on MySQL Workbench, built the website using Eclipse and used Apache Tomcat to display it onto our website. We implemented search options, purchasing, sorting, user login, employee options (adding movies and actors via XML parsing files) and pagination.
