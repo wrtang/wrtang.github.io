@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel="stylesheet" type = "text/css" href = "style.css">
+		
+		<title> Hardware Projects </title>
+
+		
+	</head>
+	
+	<body>
+		<h1 class = "TopPage">Hardware</h1>
+	<ul>
+		<li><a href= "first-test.html">Home</a></li>
+		<li><a href="Projects.html">Projects</a></li>
+		<li><a href= "AboutMe.html"> About</a></li>
+		<li><a href= "ContactMe.html"> Contact</a></li>
+	</ul>
+	
+	<div>
+	<h2 class = "HWHeaders"> LCD Display </h2>
+	<img src = "LCDDisplay.jpg" width= 200 height = 200 class = "HWP">
+	<p class = "HWParagraph">In this project, I wired a LCD Display onto a breadboard. I used the Atmega328P microcontroller to supply the LCD with power. I also wrote code that writes to the LCD display whenever the microcontroller is powered.  </p>
+	</div>
+	
+	<div>
+	<h2 class = "HWHeaders"> StopWatch </h2><br>
+	<p  class = "HWParagraph">In this project, I combined the wiring of the project above and added a button to it. The button is wired to send a input to the microcontroller whenever it is pushed. I also wrote the code of this project to mimic that of a stopwatch. Like a stopwatch, this project has three modes. Start, Stop and Reset. Every time a button is pressed the mode will change between the three. Below is a demo of the project.</p>
+	
+	<video class = "HWVideo" width = "320" height = "240" controls>
+	<source src= "StopWatchDemo.mp4"> This video is not supported on your current device.
+	</video>
+	</div>
+	
+	<div>
+	<h2 class = "HWHeaders"> Buzzer </h2>
+	<img src = "BuzzerAndLight.jpg" width= 200 height = 200 class = "HWP">
+	<p  class = "HWParagraph">In this project, I wired a pierto buzzer and dial onto the atmega328P microcontroller. The code I wrote would poll the dial for an input between 0-255 every second. Once the input is recieved, the buzzer would then play a frequency between 1048 and 2096 hz depending on the input. Below is a demonstration of the buzzer.</p>
+		
+	<video class = "HWVideo" width = "320" height = "240" controls>
+	<source src= "BuzzerDemo.mp4"> This video is not supported on your current device.
+	</video>
+	</div>
+	
+	<div>
+	<h2 class = "HWHeaders"> Light sensing LED</h2>
+	<img src = "LightSensor.jpg" width= 200 height = 200 class = "HWP">
+	<p  class = "HWParagraph">In this project, I wired a photo receptor cell and LED display onto the breadboard. I also wrote code that depending on the input of the light receptor, would change the brightness of the attached LED display. In the code, I polled the photoreceptor every second for an input and divided the 0-255 input returned by the photoreceptor into a specific set of ranges and depending on the input at the time of the polling, changed the brightness of the LED accordingly. Below is a demo of the LED changing brightness.</p>
+	
+	<video class = "HWVideo" width = "320" height = "240" controls>
+	<source src= "LightSensorDemo.mp4"> This video is not supported on your current device.
+	</video>
+	</div>
+	
+	</body>
+</html>

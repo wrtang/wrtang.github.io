@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link rel="stylesheet" type = "text/css" href = "style.css">
+		<title> Fablix Project </title>
+	</head>
+	
+	<body>
+		<h1 class = "TopPage">Fabflix</h1>
+	<ul>
+		<li><a href= "first-test.html">Home</a></li>
+		<li><a href="Projects.html">Projects</a></li>
+		<li><a href= "AboutMe.html"> About</a></li>
+		<li><a href= "ContactMe.html"> Contact</a></li>
+	</ul>
+	
+	<img src="FabFlixMobileApp.jpg" width= 250 height = 400 class = "FabPic">
+	
+	<div>
+	<h1 class = "FabHeader">Overview</h1><br>
+	<p class= "FabParagraph">This is one of my favorite projects. As a team, we developed an ecommerce movies website using amazon web browser to enhance the user's movie buying experience. As a team we developed a movie database on MySQL Workbench, built the website using Eclipse and used Apache Tomcat to display it onto our website. We implemented search options, purchasing, sorting, user login, employee options (adding movies and actors via XML parsing files) and pagination. </p>
+	</div>
+	
+	<div>
+	<h1 class = "FabHeader">Features</h1><br>
+	<p class= "FabParagraph">In our website, we implemented useful features such as user log in, session saving, employee updating options, a shopping cart, pagination and multiple search options. On our site, after logging in, the user is able to search for any movie within our database by either genre or title. We also accommedated for employee changes by allowing employees to log in with their own email and password. After logging in, the employee will be able to select a xml file, parse the file, and place it into our database. Pagination is also used to improve search time. The user can also sort the movies in the database by year or by title. Lastly if they see movies that they would like to purchase, they can add the movie to cart and purchase the movie during checkout. </p>
+	</div>
+	
+	<div>
+	<h1 class = "FabHeader">MySQL Database</h1><br>
+	<p class= "FabParagraph">
+	In our project we develped scripts to create the database. We also allowed for updates from employees of the website by creating a stored procedure to be executed by our code when the employee logs onto the website. Our code would seperate the xml file into actors, movies and their respective titles, genres and stars and batch insert them into our database to avoid overloading the database.</p>
+	</div>
+
+	<div>
+	<h1 class = "FabHeader"> Mobile Version </h1><br>
+	<p class= "FabParagraph">
+	Our mobile version is a simpler adapation of our website. It allows a user to log in and search for their favorite movies. Our code for the mobile version simply connects to the database and queries for the terms defined by the user. If there are no results, then a status page of no results will be displayed. If there are results, our app will display a list of all the movie titles matching the user's search.</p>
+	</div>
+	
+	</body>
+</html>
