@@ -37,6 +37,8 @@ li a{
 	display: block;
 	margin: 55px auto auto auto;
 	background-attachment: fixed;
+	border-radius: 50%;
+	border-color: black;
 	
 }
 
